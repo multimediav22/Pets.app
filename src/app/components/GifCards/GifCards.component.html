@@ -1,0 +1,14 @@
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+  <div *ngFor="let gif of gifs" class="col mb-3">
+    <div class="card text-center bg-dark">
+      <!-- Corrección en el atributo src y alt -->
+      <img alt="{{ gif.title }}" src="{{ gif.images.downsized_medium.url }}" class="card-img-top">
+
+      <div class="card-body text-white">
+        <p class="card-text">
+          {{ gif.title }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

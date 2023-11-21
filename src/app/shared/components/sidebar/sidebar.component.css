@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.shared-navbar {
+  background-color: #343a40; /* Color de fondo del navbar */
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.navbar-title {
+  color: #ffffff; /* Color del texto del navbar */
+}
+
+.navbar-title:hover {
+  color: #ffc107; /* Cambia a un color brillante cuando se realiza hover */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.icon-line {
+  content: '';
+  width: 30px;
+  height: 2px;
+  background-color: #ffd700;
+  margin: 0 10px;
+}
+
+.icon {
+  font-size: 24px;
+  color: #ffd700;
+  margin: 0 5px;
+}
+
+.icon:first-child {
+  margin-left: 0;
+}
+
+.icon:last-child {
+  margin-right: 0;
+}
+
+.content-wrapper {
+  flex: 1;
+  overflow: hidden;
+}

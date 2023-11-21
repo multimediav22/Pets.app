@@ -1,0 +1,53 @@
+/* Estilos para .sortable-cards */
+.sortable-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Estilos para .card */
+.card {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  background-color: #444; /* Fondo de la tarjeta */
+  border-radius: 8px;
+  overflow: hidden;
+  width: 200px; /* Ancho de la tarjeta */
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Estilos para .card-content */
+.card-content {
+  padding: 15px;
+  text-align: center;
+  color: white; /* Texto blanco */
+}
+
+/* Estilos para los iconos */
+.card-content i {
+  color: #ffd700; /* Color amarillo para los iconos */
+}
+
+/* Estilos para .card-title */
+.card-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Estilos para .card-text */
+.card-text {
+  margin-bottom: 8px;
+}
+
+/* Estilos para las etiquetas de checkbox */
+label {
+  display: block;
+  margin-top: 10px;
+  color: #ffd700; /* Color amarillo para el texto del checkbox */
+}
+

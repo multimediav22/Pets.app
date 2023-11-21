@@ -1,0 +1,126 @@
+/* Estilos para el contenedor principal */
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+/* Estilos para la barra de búsqueda */
+.search-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+/* Estilos para el input de búsqueda */
+.form-control {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 5px;
+  background-color: #f5f5f5;
+  color: #333;
+  outline: none;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
+
+/* Estilos para el botón de búsqueda */
+.search-button {
+  padding: 10px 15px;
+  background-color: #ffd700;
+  color: #333;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.search-button:hover {
+  background-color: #ffc107;
+}
+
+/* Estilos para la lista de historial de búsqueda */
+.search-history {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  z-index: 1;
+  width: 80%;
+  max-width: 400px;
+  max-height: 200px;
+  overflow-y: auto;
+  border-radius: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estilos para los elementos de la lista de historial */
+.search-history li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #eee;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estilos para el botón de eliminar en la lista de historial */
+.delete-button {
+  background-color: #444;
+  color: #ffc107;
+  border: none;
+  padding: 2px 5px;
+  margin-left: auto;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estilos para el botón de limpiar historial con icono de reciclaje */
+.clear-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-left: auto;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estilos para el icono de reciclaje */
+.recycle-icon {
+  font-size: 18px;
+  margin-right: 5px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  background-color: #444;
+  color: #ffc107;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 50%;
+}
+
+/* Estilos para el icono de reciclaje en hover */
+.recycle-icon:hover {
+  background-color: #555;
+  color: #ffd700;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

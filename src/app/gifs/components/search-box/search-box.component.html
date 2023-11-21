@@ -1,0 +1,36 @@
+<!-- Contenedor principal -->
+<div>
+
+  <!-- Input de búsqueda con la clase "form-control" y eventos keyup y click -->
+  <input
+    type="text"
+    class="form-control"
+    placeholder="Buscar..."
+    (keyup.enter)="searchTag()"
+    (click)="toggleHistory()"
+    #txtTagInput
+  />
+
+  <!-- Lista de historial de búsqueda -->
+  <ul *ngIf="searchHistory.length > 0" class="search-history">
+    <!-- Itera sobre el historial y muestra cada elemento -->
+    <li *ngFor="let item of searchHistory; let i = index" (click)="handleClickOnHistoryItem(item)">
+      {{ item }}
+      <!-- Botón para eliminar un elemento específico del historial -->
+      <button class="delete-button" (click)="deleteSearchHistoryItem(i)">X</button>
+    </li>
+    <!-- Icono de recarga y botón para limpiar todo el historial -->
+    <div class="history-actions">
+      <button title="Limpiar historial" class="clear-button" (click)="clearSearchHistory()">
+        <i class="fas fa-redo recycle-icon"></i>
+      </button>
+    </div>
+  </ul>
+
+  <!-- Botón de búsqueda con la clase "search-button" -->
+  <!-- Botón de búsqueda con icono y color negro -->
+  <button title="Buscar" class="search-button" (click)="searchTag()">
+    <i class="fas fa-search" style="color: rgb(71, 71, 71); font-size: 20px"></i>
+  </button>
+
+</div>
