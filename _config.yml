@@ -1,0 +1,7 @@
+# _config.yml
+
+# Configuración del tema (si estás utilizando uno)
+remote_theme: multimediav22/Pets.app
+
+# Carpeta de salida
+destination: ./docs/_site
