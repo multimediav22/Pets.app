@@ -4,4 +4,4 @@
 remote_theme: multimediav22/Pets.app
 
 # Carpeta de salida
-destination: ./docs/_site
+destination: ./docs
