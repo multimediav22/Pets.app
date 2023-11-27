@@ -14,7 +14,7 @@ import { GifCardsComponent } from '../components/GifCards/GifCards.component';
   ],
   imports: [
     CommonModule,
-    FormsModule  // Agrega este módulo
+    FormsModule
   ],
   exports: [
     HomepageComponent

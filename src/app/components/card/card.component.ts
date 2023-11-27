@@ -1,4 +1,4 @@
-// Importa los módulos necesarios desde Angular
+
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
 import { Gif } from '../../interfaces/gifs.interfaces';

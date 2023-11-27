@@ -76,7 +76,7 @@ export class GifsService {
     'British', 'Shorthai',
     'Abyssinian',
     'Scottish Fold',
-    'Birmano',];
+    'Birmano', 'parrot', 'bird',];
     if (tag.length === 0 || !allowedTags.includes(tag)) {
       console.warn('La búsqueda solo es válida para "perro", "gato", "pets" o "mascotas".');
       return;
